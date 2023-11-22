@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swsap');
+$padding0:0px;
+$margin0:0px;
+$box-sizing:border-box;
+$font-size125rem: 1,25rem;
+$font-weight600: 600;
+$none:none;
+$font-weight700:700;
+$height55:55px;
+$width138:138px;
+$colorpink:rgb(233,20,109) ;
+$border-radius5:5px;
+$font-weightbold:bold;
+$center: center;
+$background-colorrgba:rgba(255,255,255,0.1);
+$colorfff:#fff;
+$font-weightbolder:bolder;
+$height40:40px;
+$width145:145px;
+$border-radius4:4px;
+$transparent: transparent;
+$black-color: black;
+$border1px: 1px;
+$solid: solid; 
+$transition:transition;
+$rgba-black:rgba(0,0,0,0.75);
+$font-size30:30px;
+$white-color:white;
+$cursor:pointer;
+$border-radius3: 3px;
+$color111:#111;
+$colorrgba: rgba(255,255,255,0.1);
+$display:inline-block;
+*{
+    font-family: "roboto";
+    padding: $padding0;
+    margin: $margin0;
+    box-sizing:$box-sizing;
+}
+navbar{
+    background-color: $white-color;
+}
+.nav-link{
+    color:$black-color;
+    font-size: 1rem;
+    font-weight:$font-weight700;
+    cursor: $cursor;
+    text-decoration:$none;
+}
+.nav-link:hover{
+    color: $white-color;
+    background-color: $colorpink;
+}
+
+.navbar-brand{
+    font-size: $font-size125rem;
+    font-weight: $font-weight600;
+    color: $black-color;
+    cursor: $cursor;
+    text-decoration: $none;
+}
+.main{
+    background:url(MD.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+}
+.main h3{
+    font-size: 4.4rem;
+    font-weight: $font-weight700;
+}
+.main h6{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 3px solid $colorpink;
+    width: 40%;
+}
+.main .btn1{
+    height: $height55;
+    width: $width138;
+    background-color:$colorpink; 
+    color:$white-color;
+    outline: $none;
+    border: $none;
+    font-weight:$font-weightbold;
+    border-radius: $border-radius5;
+}
+.main .btn1:hover{
+    background-color:$colorpink; 
+    transition: $transition;
+    color:  $black-color;
+    cursor: $cursor;
+}
+.main .btn2{
+    height: $height55;
+    width: $width138;
+    background-color:$transparent; 
+    color:$colorpink; 
+    outline: $none;
+    border:$border1px $solid $colorpink;
+    font-weight: $font-weightbold;
+    border-radius: $border-radius5;
+}
+.main .btn2:hover{
+    background-color:$colorpink;  
+    transition: $transition;
+    color: $white-color;
+    cursor:$cursor;
+}
+.About img{
+    -webkit-box-shadow:6px 4px 41px -24px $rgba-black;
+    -moz-box-shadow: 6px 4px 41px -24px $rgba-black;
+    box-shadow:6px 4px 41px -24px $rgba-black ; 
+}
+h1{
+    font-size: 3rem;
+    font-weight:900;
+}
+.div1{
+    justify-content: $center;
+    align-items: $center;
+    background-color:$color111;
+    height: 100vh;
+    padding: $padding0;
+    margin: $margin0;
+}
+.chart{
+    background-color: $colorrgba;
+    justify-content:flex-start;
+    align-items:$center;
+    position: relative;
+    padding: 0px ,5px;
+    display: flex;
+    height: $height40;
+    width: 500px;
+}
+.chart span{
+    margin-left: 5px;
+    color: $colorfff;
+    font-weight: bolder;
+}
+.bar{
+    animation: load 6s normal forwards; 
+    box-shadow: 0px 10px 40px -10px $colorfff;
+    border-radius: 100px;
+    background-color:$black-color;
+    height:30px;
+    width: 0px;
+}
+
+@keyframes load{
+    0% {
+        width: 0;
+    }
+100%{
+    width: 100;
+}
+}
+.btn3{
+    height:$height40;
+    width: $width145;
+    outline: $none;
+    border:$none;
+    background-color:$black-color;
+    color: $white-color;
+    border-radius: $border-radius4;
+}
+.btn3:hover{
+    background-color: $transparent;
+    color:$black-color;
+    border: $border1px $solid $black-color;
+    transition: $transition;
+}
+
+.btn4{
+    height:$height40;
+    width: $width145;
+    outline: $none;
+    border: $border1px $solid $black-color;
+    background-color: $transparent;
+    color: $black-color;
+    border-radius: $border-radius4;
+}
+.bnt4:hover{
+    background-color:$transparent;
+    color: $black-color;
+    border: $border1px $solid $black-color;
+    transition: $transition;
+}
+
+.btn5:hover{
+    background-color: $transparent;
+    color: $black-color;
+    border: $border1px $solid $black-color;
+    transition: $transition;
+}
+.card{
+    border: $none;
+    outline: $none;
+    -webkit-box-shadow:8px 6px 83px -65px $rgba-black;
+    -moz-box-shadow:-8px 6px 89px -65px $rgba-black;
+    box-shadow: -8px 6px 89px -65px $rgba-black ;
+    
+}
+.card p{
+    color: gray;
+    width: auto;
+    height: auto;
+}
+.circle{
+    width: 70px;
+    height: 70px;
+    background-color: lightgray;
+    color:$black-color;
+    padding: 12px;
+    font-size:30px;
+    border-radius: 50%;
+    display: $display; 
+    margin: 40px;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+.card .circle:hover{
+    background-color: $black-color;
+    color: $white-color;
+    transition: $transition;
+
+}
+.control ul li{
+    list-style: $none;
+    background-color: $black-color;
+    padding: 5px 15px;
+    color: $white-color;
+    display: $display;
+    cursor: $cursor;
+    letter-spacing: 2px;
+}
+
+
+#img_1,#img_2,#img_3 {
+    opacity: 1;
+    transition: $transition;
+}
+#img_1:hover,#img_2:hover,#img_3:hover{
+    filter: grayscale(0);
+    transform: scale(1.3);
+    rotate: 10deg;
+}
+
+.form{
+    padding:$padding0;
+    margin: $margin0;
+    box-sizing: $box-sizing;
+    background-color: rgb(219,226,226);
+    border-radius: 3px;
+}
+.img-fluid form{
+    border: top 30px ;
+    border:left 30px;
+    border: radius 30px; 
+    border-bottom: left 30px;
+}
